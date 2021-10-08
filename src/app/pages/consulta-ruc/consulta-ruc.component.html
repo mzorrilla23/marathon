@@ -1,0 +1,21 @@
+
+<div class="container">
+  <img class="img-logo" src="./assets/8796182904862.png" width="300"/>
+  <div class="form-cont">
+      <h3>Consulta Ruc</h3>
+
+      <form (ngSubmit)="consultar()" [formGroup]="formCompania">
+
+          <div class="row">
+              <input formControlName="ruc" matInput placeholder="Ingrese Ruc" />
+          </div>          
+          <div class="row">
+              <button class="waves-effect waves-light btn" type="submit" >Consulta Ruc</button>
+          </div>
+  
+      </form>
+      <div id="demo">
+      </div>
+      
+  </div>
+</div>

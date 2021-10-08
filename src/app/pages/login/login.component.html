@@ -1,0 +1,26 @@
+
+<div class="container">
+    <img class="img-logo" src="./assets/8796182904862.png" width="300"/>
+    <div class="form-cont">
+        <h3>Login</h3>
+
+        <form (ngSubmit)="ingresar()" [formGroup]="formLogin">
+
+            <div class="row">
+                <input formControlName="username" matInput placeholder="Username" />
+            </div>
+            <div class="row">
+                <input type="password" formControlName="password" placeholder="Password" matInput />  
+            </div>
+            <div class="row">
+                <button class="waves-effect waves-light btn" type="submit" >INGRESAR</button>
+            </div>
+
+            <div class="row" id="msg">
+
+            </div>
+    
+        </form>
+        
+    </div>
+</div>
